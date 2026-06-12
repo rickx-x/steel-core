@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1296db;
+  --color-primary-dark: #0e7db7;
+  --color-accent: #ff4136;
+  --color-accent-hover: #e02f25;
+  --color-dark: #1f2937;
+  --color-light-bg: #f8fafc;
+  
+  --font-display: "Poppins", "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: var(--color-dark);
+    background-color: var(--color-light-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    @apply text-slate-800 bg-slate-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom styles for animations & decorative items */
+@keyframes gear-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes gear-rotate-reverse {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+.animate-gear-fast {
+  animation: gear-rotate 12s linear infinite;
+}
+
+.animate-gear-reverse {
+  animation: gear-rotate-reverse 18s linear infinite;
+}
+
