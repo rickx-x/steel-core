@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../assets/logo.svg';
 import {
   Wrench,
   Weight,
@@ -393,14 +394,12 @@ export default function App() {
           
           {/* Logo Mark */}
           <a href="#hero" className="flex items-center space-x-3 group" id="nav-logo">
-            <div className="w-10 h-10 bg-primary flex items-center justify-center rounded text-white font-extrabold text-xl shadow-md shadow-primary/20 group-hover:scale-105 transition-transform">
-              S
-            </div>
+            <img src={logo} alt="Steelcore Logo" className="w-10 h-10 group-hover:scale-105 transition-transform" />
             <div>
-              <div className="text-xl font-bold tracking-tight text-slate-900 leading-none flex items-center">
-                Steelcore
+              <div className="text-xl font-bold tracking-tight leading-none flex items-center">
+                <span className="text-blue-600">Steel</span><span className="text-red-600">Core</span>
               </div>
-              <span className="text-xs uppercase tracking-widest font-semibold text-primary block mt-0.5">
+              <span className="text-xs uppercase tracking-widest font-semibold text-black block mt-0.5">
                 Enterprises
               </span>
             </div>
@@ -1178,7 +1177,7 @@ export default function App() {
                     <div className="w-2.5 h-2.5 bg-accent rounded-full"></div>
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Map GPS Coordinates</span>
                   </div>
-                  <span className="text-[10px] text-slate-500 font-bold">17.6868° N, 83.2185° E</span>
+                  <span className="text-[10px] text-slate-500 font-bold">17.672803° N, 83.189442° E</span>
                 </div>
                 
                 <p className="text-xs text-slate-400 leading-relaxed mb-4">
@@ -1186,7 +1185,7 @@ export default function App() {
                 </p>
 
                 <a 
-                  href="https://www.google.com/maps/place/DriveTech+Engineering/@17.6795279,83.176292,14.22z/data=!4m6!3m5!1s0x3a3969000d43ab59:0xd85f4485e4ad1d0f!8m2!3d17.672793!4d83.1893972!16s%2Fg%2F11xtnqlkyv?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" 
+                  href="https://www.google.com/maps/place/Steelcore+Enterprises/@17.6727893,83.189252,20.57z/data=!4m6!3m5!1s0x3a3969c22b492389:0x82da9c7ff37a97e1!8m2!3d17.6728194!4d83.1894052!16s%2Fg%2F11nq11z338?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" 
                   target="_blank" 
                   rel="noreferrer"
                   className="inline-flex items-center space-x-2 text-xs font-bold text-primary hover:text-white transition"
@@ -1376,14 +1375,12 @@ export default function App() {
             {/* Column 5: Branding */}
             <div className="lg:col-span-5 space-y-4">
               <div className="flex items-center space-x-3 group text-white">
-                <div className="w-9 h-9 bg-primary flex items-center justify-center rounded text-white font-black text-lg">
-                  S
-                </div>
+                <img src={logo} alt="Steelcore Logo" className="w-9 h-9 group-hover:scale-105 transition-transform" />
                 <div>
-                  <div className="text-lg font-bold tracking-tight leading-none text-white">
-                    Steelcore
+                  <div className="text-lg font-bold tracking-tight leading-none flex items-center">
+                    <span className="text-blue-600">Steel</span><span className="text-red-600">Core</span>
                   </div>
-                  <span className="text-[10px] uppercase tracking-wider font-semibold text-primary block mt-0.5">
+                  <span className="text-[10px] uppercase tracking-wider font-semibold text-white block mt-0.5">
                     Enterprises
                   </span>
                 </div>
